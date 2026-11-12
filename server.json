@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "app.astroprocessor/astroprocessor",
+  "title": "AstroProcessor",
+  "description": "Your natal chart, forecasts, synastry and astromap from NASA/JPL-grade ephemeris data",
+  "version": "1.0.1",
+  "websiteUrl": "https://astroprocessor.app/astrology-mcp-server",
+  "icons": [
+    {
+      "src": "https://astroprocessor.app/android-icon-512x512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.astroprocessor.app/mcp"
+    }
+  ]
+}
