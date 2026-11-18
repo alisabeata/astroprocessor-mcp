@@ -27,6 +27,8 @@ Your birth data is saved once in your AstroProcessor profile, so every tool read
 
 ## Tools
 
+16 tools. The chart tools read your own chart by default. Give them `chart` (a chart's name or id, from `list_charts`) to read any chart saved in your AstroProcessor dashboard instead: a family member's, a friend's or a client's.
+
 | Tool | What it returns |
 |---|---|
 | `get_chart_data` | Your natal chart: planets, houses, angles, aspects, dignities, fixed stars, configurations |
@@ -35,13 +37,15 @@ Your birth data is saved once in your AstroProcessor profile, so every tool read
 | `get_solar_return` | The solar return in force at a date: the chart for your year |
 | `get_progressions` | Your secondary progressions for a date |
 | `get_lunar_return` | Your lunar return: the chart for the current month |
-| `get_synastry` | Another person's chart read against yours, from their birth date, time and city |
+| `get_synastry` | Another person's chart read against yours, from their birth date, time and city, or from a chart saved in your dashboard |
+| `get_horary_chart` | A horary chart for the moment a question is asked (or a saved horary chart), with the traditional judgment layer: rulers, dignities, receptions, perfection, the void-of-course Moon |
 | `get_relocation_place` | Your chart recast for another city, with your AstroMap lines near it |
 | `search_astromap_cities` | Cities near your AstroMap lines (a planet on the MC, IC, ASC or DSC) |
 | `get_moon_data` | The Moon's sign, phase and illumination, or the exact time of its next phase |
 | `find_eclipse` | The next or previous solar and lunar eclipses, with their signs |
 | `get_sunrise_sunset` | Sunrise and sunset for a day at a place |
 | `find_city` | City lookup, for an unclear or ambiguous place name |
+| `list_charts` | The charts saved in your dashboard, natal and horary, to pass as `chart` |
 | `get_balance` | Your plan, credits and the price of the next message |
 
 All tools are read-only, apart from `get_chart_data` saving your own birth data once to an empty profile. Charts use the tropical zodiac and classical Western astrology.
@@ -85,6 +89,8 @@ Step-by-step guide for every app: https://astroprocessor.app/ai-connector
 - "How compatible are we? Her birth details are 14 March 1990, 08:30, Lisbon."
 - "Which cities fall on my Venus lines in Europe?"
 - "When is the next full Moon, and in which sign?"
+- "Will I get this job?" (a horary question, judged from the moment it is asked)
+- "What is coming this year for my sister? Her chart is saved as Anna."
 
 ## Usage and limits
 
